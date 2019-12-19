@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Ryan's Happy Blog Website" content="Here is where I freely express all my news and nature related thoughts and feelings">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Blog Site Subscription Sign-Up</title>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class = "row">
+            <div class = "col-3">
+                <img class = "img-fluid d-none d-md-block" src="images/cat2.jpg">
+            </div>
+            <div class = "col-9">
+                <h3>Complete the form below to sign up for email notifications. This form will totally sign you up and not just direct you back to the previous page.</h1>
+                <form>
+                    Email Address: <br>
+                    <input type = "text" name = "email"><br>
+                    <br>
+                    Notification Frequency: <br>
+                    <input type="radio" name="frequency" value="secondly" checked> Secondly <br>
+                    <input type="radio" name="frequency" value="minutely"> Minutely <br>
+                    <input type="radio" name="frequency" value="hourly"> Hourly <br>
+                    <input type="radio" name="frequency" value="daily"> Daily <br>
+                    <input type="radio" name="frequency" value="daily"> Weekly <br>
+                    <input type="radio" name="frequency" value="daily"> Monthly <br><br>
+                </form>
+                <button onclick="goBack()">Submit</button>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

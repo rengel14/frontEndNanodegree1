@@ -1,0 +1,25 @@
+
+.home{
+    color: grey;
+}
+
+.search{
+    height: 50px;
+    width: 50px;
+}
+
+#bioTitle{
+    font-weight: bold;
+}
+
+#nav{
+    padding-bottom: 2vh;
+}
+
+.subscribe{
+    padding-left: 1vw;
+}
+
+h2{
+    text-decoration: underline;
+}
