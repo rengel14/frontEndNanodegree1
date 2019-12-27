@@ -75,7 +75,7 @@
 	{
 		position: -webkit-sticky; /* Safari */
 		position: sticky;
-		top: 90vh;
+		top: 75vh;
 	}
 	.shareRow{
 		margin: 0px 10px;

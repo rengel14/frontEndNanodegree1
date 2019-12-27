@@ -99,7 +99,7 @@ table{
 	.bot-fixed{
 		position: -webkit-sticky; /* Safari */
 		position: sticky;
-		top: 90vh;
+		top: 75vh;
     }
     .top-line{
         display: none;
