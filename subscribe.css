@@ -1,0 +1,17 @@
+@import "style.css";
+.container
+{
+	display:grid;
+	grid-template-columns: 20vw 70vw;
+	grid-template-rows: 100vh;
+	grid-template-areas: 
+	"side main";
+	padding: 10px 5vw;
+}
+.side
+{
+	grid-area:side;
+}
+.form{
+	grid-area:main;
+}

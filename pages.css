@@ -1,25 +1,64 @@
-
-.home{
-    color: grey;
+@import "style.css";
+.container
+{
+	display:grid;
+    grid-template-columns: 5vw 15vw 65vw 5vw;
+    grid-template-rows: 10vh auto auto 10vh;
+    grid-template-areas: 
+    "icon1 hd hd icon2"
+    "sd sd main main"
+    "prev home home next"
+    "ft ft ft ft";
+	padding: 0px 5vw;
 }
-
-.search{
-    height: 50px;
-    width: 50px;
+.content
+{
+    grid-area:main;
+    width: 70vw;
 }
-
-#bioTitle{
-    font-weight: bold;
+.header
+{
+	grid-area:hd;
 }
-
-#nav{
-    padding-bottom: 2vh;
+#prev
+{
+    grid-area:prev;
+    width: 25px;
+    margin: 2vh 0px;
 }
-
-.subscribe{
-    padding-left: 1vw;
+#next
+{
+    grid-area:next;
+    width: 25px;
+    margin: 2vh 0px;
 }
-
+#home
+{
+    grid-area:home;
+    margin: 2vh 0px;
+}
+.footer
+{
+	grid-area:ft;
+}
 h2{
     text-decoration: underline;
+}
+.top-fixed
+{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 10vh;
+}
+table
+{
+    border-collapse: collapse;
+    border: 2px solid lightgrey;
+}
+  
+ th, td
+ {
+    border: 2px solid lightgrey;
+    padding: 15px;
+    text-align: left;
 }

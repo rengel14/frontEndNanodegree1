@@ -20,4 +20,3 @@ while(True):
 html = html.encode('ascii', 'ignore')
 fp = open("htmlOut.txt", 'wb')
 fp.write(html)
-# print(html[20250:20265])
