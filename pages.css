@@ -1,64 +1,107 @@
 @import "style.css";
-.container
-{
+.container{
 	display:grid;
-    grid-template-columns: 5vw 15vw 65vw 5vw;
-    grid-template-rows: 10vh auto auto 10vh;
-    grid-template-areas: 
-    "icon1 hd hd icon2"
-    "sd sd main main"
-    "prev home home next"
-    "ft ft ft ft";
-	padding: 0px 5vw;
+	grid-template-columns: 80vw;
+	grid-template-rows: 10vh auto auto 10vh;
+	grid-template-areas: 
+	"hd"
+	"main"
+    "prev"
+    "home"
+    "next"
+    "sd"
+	"ft";
+	padding: 0px 10vw;
 }
-.content
-{
+.content{
     grid-area:main;
     width: 70vw;
 }
-.header
-{
+.header{
 	grid-area:hd;
 }
-#prev
-{
+#prev{
     grid-area:prev;
-    width: 25px;
     margin: 2vh 0px;
 }
-#next
-{
+#next{
     grid-area:next;
-    width: 25px;
     margin: 2vh 0px;
 }
-#home
-{
+#home{
     grid-area:home;
     margin: 2vh 0px;
 }
-.footer
-{
+.footer{
 	grid-area:ft;
 }
 h2{
     text-decoration: underline;
 }
-.top-fixed
-{
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 10vh;
-}
-table
-{
+table{
     border-collapse: collapse;
     border: 2px solid lightgrey;
 }
   
- th, td
- {
+ th, td{
     border: 2px solid lightgrey;
     padding: 15px;
     text-align: left;
+}
+.share{
+	width: calc(40vw/3);
+	height: calc(40vw/3);
+	margin: 0px 5vw;
+}
+.shareRow{
+    margin: 4vh 0px;
+}
+.logo1,.logo2{
+	display: none;
+}
+.top-line{
+    padding-top: 2vh;
+    border-top: 2px solid lightgrey;
+}
+.nav-button{
+    width: 50px;
+}
+@media screen and (min-width: 900px) {
+    .container{
+        display:grid;
+        grid-template-columns: 5vw 15vw 65vw 5vw;
+        grid-template-rows: 10vh auto auto 10vh;
+        grid-template-areas: 
+        "icon1 hd hd icon2"
+        "sd sd main main"
+        "prev home home next"
+        "ft ft ft ft";
+        padding: 0px 5vw;
+    }
+    .top-fixed{
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 11vh;
+    }
+	.logo1{
+        display: initial;
+        grid-area: icon1;
+    }
+    .logo2{
+        display: initial;
+        grid-area: icon2;
+    }
+	.share{
+		width: calc(20vw/3 - 10px - 20px/3);
+		height: calc(20vw/3 - 10px - 20px/3);
+		margin: 0px 5px;
+	}
+	.bot-fixed{
+		position: -webkit-sticky; /* Safari */
+		position: sticky;
+		top: 90vh;
+    }
+    .top-line{
+        display: none;
+    }
 }

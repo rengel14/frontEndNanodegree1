@@ -1,32 +1,27 @@
 @import "style.css";
-
 .animalTopic{
     color: blueviolet;
     font-weight: bold;
 }
-
 .worldTopic{
     color: orangered;
     font-weight: bold;
 }
-
 .date{
     font-size: .9em;
     color: grey;
 }
-
 .container{
 	display:grid;
 	grid-template-columns: 80vw;
 	grid-template-rows: 10vh auto auto 10vh;
 	grid-template-areas: 
 	"hd"
-	"sd"
 	"main"
+	"sd"
 	"ft";
 	padding: 0px 10vw;
 }
-	
 .header{
 	grid-area:hd;
 }
@@ -44,7 +39,17 @@
 	margin: 1vh 0px;
 	position: relative;
 }
-
+.logo1,.logo2{
+	display: none;
+}
+.share{
+	width: calc(40vw/3);
+	height: calc(40vw/3);
+	margin: 0px 5vw;
+}
+.shareRow{
+	margin: 10px 0px;
+}
 @media screen and (min-width: 600px) {
 	.container{
 		grid-template-columns: 20vw 70vw;
@@ -53,18 +58,33 @@
 		"hd hd"
 		"sd main"
 		"ft ft";
-		
 		padding: 0px 5vw;
 	}
 	.top-fixed
 	{
 		position: -webkit-sticky; /* Safari */
 		position: sticky;
-		top: 10vh;
+		top: 11vh;
+	}
+	.share{
+		width: calc(20vw/3 - 10px - 20px/3);
+		height: calc(20vw/3 - 10px - 20px/3);
+		margin: 0px 5px;
+	}
+	.bot-fixed
+	{
+		position: -webkit-sticky; /* Safari */
+		position: sticky;
+		top: 90vh;
+	}
+	.shareRow{
+		margin: 0px 10px;
 	}
 }
 @media screen and (min-width: 900px) {
-	
+	.logo1,.logo2{
+		display: initial;
+	}
 	.container{
 		grid-template-columns: 5vw 15vw 65vw 5vw;
 		grid-template-rows: 10vh auto 10vh;
