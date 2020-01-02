@@ -4,7 +4,7 @@
     .container{
         display:grid;
         grid-template-columns: 5vw 15vw 65vw 5vw;
-        grid-template-rows: 10vh auto auto 10vh;
+        grid-template-rows: 10vh auto auto auto;
         grid-template-areas: 
         "icon1 hd hd icon2"
         "sd sd main main"

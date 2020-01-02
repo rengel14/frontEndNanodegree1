@@ -30,6 +30,9 @@
 	.shareRow{
 		margin: 0px 10px;
 	}
+	.cardPicContainer{
+		width: calc(68vw - 6px);
+	}
 }
 @media screen and (min-width: 900px) {
 	.logo1,.logo2{
@@ -51,5 +54,9 @@
 	.card{
 		width: calc(33vw - 26px);
 		margin: 10px;
+	}
+	.cardPicContainer{
+		width: calc(33vw - 26px);
+		z-index: -1;
 	}
 }

@@ -49,3 +49,11 @@
 .shareRow{
 	margin: 10px 0px;
 }
+.cardPicContainer{
+	width: calc(78vw - 6px);
+	text-align: right;
+}
+.cardPic{
+	height: 75px;
+	width: 75px;
+}
