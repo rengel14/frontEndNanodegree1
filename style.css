@@ -42,8 +42,12 @@ a{
 .sidebar{
 	grid-area:sd;
 }
-.logo1,.logo2{
+.logo1{
   grid-area:icon1;
+  height: 10vh;
+}
+.logo2{
+  grid-area:icon2;
   height: 10vh;
 }
 .flexcol{
